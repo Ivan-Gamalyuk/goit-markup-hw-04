@@ -154,6 +154,13 @@ color: #212121;
                                          /*main*/
  .business{
   background: #2F303A;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+   rgba(47, 48, 58, 0.4)), url(../img/photo_bg.jpg);
+   max-width: 1600px;
+   margin: 0px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
  }                                        
@@ -216,6 +223,36 @@ color: #FFFFFF;
     
     color: var(--text-color);
   }     
+
+ .option-soc-list {
+   display: flex;
+   justify-content: center;
+ }
+ 
+ .option-soc-item {
+   width: 270px;
+   height: 120px;
+   background: #F5F4FA;
+   border-radius: 4px;
+   margin-bottom: 30px;
+   margin-left: 30px;
+ }
+
+ .option-soc-item:first-child {
+   margin-left: 0px;
+ }
+
+ .option-soc {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+ }
+
+
+
+
   .work {
     padding-bottom: 94px;
   }
@@ -263,12 +300,14 @@ color: #FFFFFF;
     flex-basis: calc(100% / 4 - 30px);
     margin: 15px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px; 
   }
   .about-people {
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
     background-color: #FFFFFF;
+    border-radius: 4px;
   }
 
   .hero-name {
@@ -285,7 +324,101 @@ color: #FFFFFF;
     letter-spacing: 0.03em;
     
     color: var(--text-color);
+    margin-bottom: 16px;
   }   
+
+  .hero-soc-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-soc-item {
+   width: 44px;
+   height: 44px;
+   margin-left: 10px;
+
+  }
+  
+  .hero-soc-item:first-child {
+    margin-left: 0px;
+  }
+
+  .hero-soc-link {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+  }
+  .hero-soc-icon {
+    fill:  #AFB1B8;
+  }
+
+  .hero-soc-link:hover,
+  .hero-soc-link:focus {
+    background: #2196F3;
+  }
+
+  .hero-soc-link:hover .hero-soc-icon,
+  .hero-soc-link:focus .hero-soc-icon {
+    fill: #FFFFFF;
+  }
+  
+  .customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    
+  }
+
+  .customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .customers-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .customers-item {
+   width: 170px;
+   height: 92px;
+   margin-left: 30px; 
+   border: 1px solid #AFB1B8;
+   border-radius: 4px;
+  }
+  .customers-item:first-child {
+    margin-left: 0px;
+  }
+
+  .customers-icon {
+    fill: #AFB1B8;
+  }
+
+  .customers-link {
+   display: flex;
+   align-items: center ;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+  }
+   
+  .customers-link:hover,
+  .customers-link:focus {
+    border: 1px solid #2196F3;
+  }
+
+  .customers-link:hover .customers-icon,
+  .customers-link:focus .customers-icon {
+    fill: #2196F3;
+  }
+
                                     /*footer*/
    .footer {
     background: #2F303A;
