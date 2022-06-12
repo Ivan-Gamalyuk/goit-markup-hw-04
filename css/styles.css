@@ -296,7 +296,7 @@ color: #FFFFFF;
   } 
   
   .hero {
-    background: #E5E5E5;
+    background: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px; 
   }
@@ -532,7 +532,8 @@ color: #FFFFFF;
   .main-box {
     padding-top: 94px;
     padding-bottom: 94px;
-  }                          
+  } 
+
   .main-btn {
     font-family: 'Roboto';
     font-style: normal;
@@ -555,10 +556,11 @@ color: #FFFFFF;
   .main-item:not(:last-child) {
     margin-right: 8px;
   }
+  
   .about-box {
     padding-top: 20px;
     padding-bottom: 20px;
-    border: 1px solid #EEEEEE;
+    /* border: 1px solid #EEEEEE; */
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -569,9 +571,16 @@ color: #FFFFFF;
   }
   .box-item {
     flex-basis: calc(100% / 9 - 30px);
-     margin: 15px;
-     
+     margin: 15px; 
+     outline: 1px solid #EEEEEE;
   }
+
+  .box-item:hover,
+  .box-item:focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px 
+rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
   .box-title{
     font-weight: 700;
     font-size: 18px;
